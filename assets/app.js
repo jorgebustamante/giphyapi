@@ -49,10 +49,12 @@ $(document).ready(function() {
       };
 
         $("#add-gif").on("click", function(){
-        search = $("#gif-input").val().trim()
-        let btn = $("<button>").text(search)
-        btn.addClass("gifButton")
-        $("#buttons-casa").append(btn)
+        search = $("#gif-input").val().trim();
+        let btn = $("<button>").text(search);
+        btn.addClass("gifButton");
+        $("#buttons-casa").append(btn);
+        $("#gif-input").val("");
+
       });
       
 
