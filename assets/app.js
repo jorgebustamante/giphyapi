@@ -16,6 +16,7 @@ $(document).ready(function() {
 
     $(document).on("click", ".gifButton", function(){
       person = $(this).text();
+      $("#gifs-appear-here").empty();
       addImg(person);
     });
 
